@@ -1,0 +1,317 @@
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 600px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+	html, body {
+		overflow-x: hidden;
+		font-family: sans-serif;
+	}
+
+	body {
+		margin: 0;
+		display: flex;
+		flex-direction: row;
+	}
+
+	#sidenav {
+		width: 80vw;
+		height: 100vh;
+		overflow: hidden;
+		background-color: white;
+		z-index: 3;
+		overflow: hidden;
+	}
+
+	#content {
+		width: 100vw;
+		height: 100vh;
+		z-index: 1;
+	}
+
+	header {
+		width: 100vw;
+		height: 20vw;
+		background-color: #0D47A1;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.nav1, .nav2 {
+		height: 15vw;
+		width: 8vh;
+		margin-top: auto;
+		margin-bottom: auto;
+		margin-left: 2vw;
+	}
+
+	header h1 {
+		font-size: 10vw;
+		margin: auto;
+		margin-left: 8vw;
+		color: white;
+	}
+
+	header h2 {
+		font-size: 10vw;
+		margin: auto;
+		margin-left: 8vw;
+		color: white;
+	}
+
+	#dimblack, .popupblack {
+		height: 100vh;
+		width: 100vw;
+		position: absolute;
+		z-index: 0;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	h3 {
+		color: black;
+		font-size: 8vw;
+		margin: 0;
+		margin-top: 5vh;
+		margin-left: 20vw;
+		font-weight: normal;
+		opacity: 0.8;
+	}
+	.linkbox {
+		height: 8vh;
+		margin: 0;
+		float: left;
+	}
+
+/*-----------------Template - End ---------------------*/
+
+	.week {
+		height: 6vh;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		border-bottom: rgba(0,0,8,0.8) solid 2px;
+	}
+
+	.week p {
+		font-size: 5vw;
+		opacity: 0.8;
+		margin: 0;
+		margin-top: auto;
+		margin-bottom: auto;
+		padding: 1vw;
+		width: 10vw;
+		text-align: center;
+	}
+
+	.schedule {
+		background-color: lightgray;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		width: 80%;
+		margin-top: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: white;
+		border: black solid 2px;
+	}
+
+	.schedule p {
+		color: black;
+		opacity: 1;
+		text-align: center;
+		font-size: 20px;
+		font-weight: bold;
+		padding: 10px;
+		margin: 0;
+		border-bottom: 3px black solid;
+		margin-bottom: 30px;
+	}
+
+	.block, .block, .block {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		height: 100px;
+		margin-left: auto;
+		margin-right: auto;
+		border-bottom: black solid 1px;
+		border-top: black solid 1px;
+	}
+
+
+	.margin {
+		margin-top: 15px;
+	}
+	.info {
+		flex-grow: 5;
+	}
+
+	.time {
+		flex-grow: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.time p {
+		font-size: 14px;
+		border: none;
+		padding: 0;
+		margin: 0;
+		font-weight: normal;
+		font-family: serif;
+	}
+
+	h4 {
+		font-weight: bold;
+		margin: 0;
+		padding: 0;
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+
+	.popup {
+		position: fixed;
+		height: 500px;
+		width: 350px;
+		background-color: white;
+		z-index: 2;
+		position: absolute;
+		margin: auto;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		border: 3px solid black;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.popup h1 {
+		font-size: 24px;
+		text-align: center;
+		font-weight: bold
+	}
+	.popup h2 {
+		font-size: 24px;
+		text-align: center;
+		font-weight: normal;
+	}
+
+	.comment {
+		height: 200px;
+		width: 300px;
+		border: black 1px solid;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	label {
+		font-size: 20px;
+		z-index: 2;
+		color: #95989A;
+		opacity: 0.8;
+		margin-left: 25px;
+	}
+
+	textarea {
+		font-size: 24px;
+		color: black;
+		opacity: 0.8;
+	}
+
+	.inputs {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		height: 50px;
+		margin-top: auto;
+		margin-bottom: auto;
+		justify-content: space-around;
+	}
+
+	inputs h2 {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		font-weight: normal;
+		font-size: 20px;
+	}
+
+
+/* -----------------Javascripts--------------------- */
+
+	.sidenav_sit1 {
+		margin-right: 20vw;
+	}
+
+	.sidenav_sit3 {
+		animation: slideback .5s 1;
+		animation-fill-mode: forwards;
+	}
+
+	.sidenav_sit2 {
+		animation: slideforward .5s 1;
+		animation-fill-mode: forwards;
+	}
+
+	.hide {
+		display: none !important;
+	}
+
+	.darken {
+		background: black;
+		opacity: 0.5;
+		z-index: 2 !important;
+	}
+
+	.blue {
+		color: #0D47A1;
+	}
+
+	.attended {
+		background-color: #00FF00;
+	}
+
+	.not_attended {
+		background-color: red;
+	}
+
+	.attending {
+		background-color: yellow;
+	}
+
+	unavailable {
+		background-color: white;
+	}
+
+	.positionfixed {
+		position: fixed;
+		z-index: 1;
+	}
+
+	.dim {
+		z-index: 4;
+	}
+
+	@keyframes slideforward {
+		0% {margin-right: 20vw;}
+		100% {margin-right: -80vw;}
+	}
+	@keyframes slideback {
+		0% {margin-right: -80vw;}
+		100% {margin-right: 20vw;}
+	}
+
+}
