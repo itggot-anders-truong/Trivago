@@ -25,6 +25,8 @@ function register() {
 	popup.classList.add('hide');
     userinput = name.toLowerCase();
     passinput = password.toLowerCase();
+    document.querySelector(".username_register").value = null;
+    document.querySelector(".password_register").value = null;
 }
 
 
@@ -32,11 +34,10 @@ function register() {
 function login() {
     var name = document.querySelector('.username').value;
     var password = document.querySelector('.password').value;
-    var wrong = document.querySelector('.wrong')
     if (name.toLowerCase() == userinput && password.toLowerCase() == passinput) {
         window.location.replace("./meetings.html")
     } else {
-    wrong.classList.remove('hide')
+    alert("Wrong password or username!");
     }
 }
 

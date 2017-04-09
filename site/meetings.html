@@ -21,6 +21,14 @@
 			<img onclick="sidenav()" class="nav2 hide" src="img/ic_arrow_back_white_3x.png">
 			<img onclick="sidenav()" class="nav1" src="img/ic_menu_white_3x.png">
 			<h1>Attendance™</h1>
+			<div class="desktop_nav">
+				<a href="#"><h1>Profile</h1></a>
+				<a href="#"><h1>Notices</h1></a>
+				<a href="#"><h1>Send feedback</h1></a>
+				<a href="#"><h1>About us</h1></a>
+				<a href="#"><h1>Contact us</h1></a>
+				<a href="index.html"><h1>Sign out</h1></a>
+			</div> 
 		</header>
 		<div class="week">
 			<p class="blue mon" onclick="weekday(this)">Mon</p>
@@ -34,7 +42,12 @@
 		<div class="schedule">
 			<div class="monday weekdayschedule">
 				<p>Monday</p>
-				<div class="block attended">
+				<div class="margin"></div>
+				<div class="margin"></div>
+				<div class="margin"></div>
+				<div class="margin"></div>
+				<div class="margin"></div>
+				<div onclick="errorAvailable()" class="block attended">
 					<div class="info">
 						<h4>Grännsnittdesign<h4>
 						<h4>Sal 123<h4>
@@ -46,7 +59,7 @@
 				</div>
 				<div class="margin"></div>
 				<div class="margin"></div>
-				<div class="block attended">
+				<div onclick="errorAvailable()" class="block attended">
 					<div class="info">
 						<h4>Mattematik 4<h4>
 						<h4>Sal 345<h4>
@@ -59,7 +72,7 @@
 				<div class="margin"></div>
 				<div class="margin"></div>
 				<div class="margin"></div>
-				<div class="block not_attended">
+				<div onclick="errorAvailable()" class="block not_attended">
 					<div class="info">
 						<h4>Mentorstid<h4>
 						<h4>Sal 420<h4>
@@ -72,7 +85,12 @@
 			</div>
 			<div class="tuesday hide weekdayschedule">
 				<p>Tuesday</p>
-				<div class="block attended">
+				<div class="margin"></div>
+				<div class="margin"></div>
+				<div class="margin"></div>
+				<div class="margin"></div>
+				<div class="margin"></div>
+				<div onclick="errorAvailable()" class="block attended">
 					<div class="margin"></div>
 					<div class="margin"></div>
 					<div class="margin"></div>
@@ -88,7 +106,7 @@
 				</div>
 				<div class="margin"></div>
 				<div class="margin"></div>
-				<div class="block attended" style="height: 150px;">
+				<div onclick="errorAvailable()" class="block attended" style="height: 150px;">
 					<div class="info">
 						<h4>Programmering<h4>
 						<h4>Sal 69<h4>
@@ -102,7 +120,7 @@
 				<div class="margin"></div>
 				<div class="margin"></div>
 				<div class="margin"></div>
-				<div class="block attended">
+				<div onclick="errorAvailable()" class="block attended">
 					<div class="info">
 						<h4>Kemi<h4>
 						<h4>Sal 1234<h4>
@@ -125,7 +143,8 @@
 				<div class="margin"></div>
 				<div class="margin"></div>
 				<div class="margin"></div>
-				<div class="block attended" style="height: 125px;">
+				<div class="margin"></div>
+				<div onclick="errorAvailable()" onclick="errorAvailable()" class="block attended" style="height: 125px;">
 					<div class="info">
 						<h4>Mattematik 4<h4>
 						<h4>Sal 323<h4>
@@ -136,7 +155,7 @@
 					</div>
 				</div>
 				<div class="margin"></div>
-				<div class="block attended">
+				<div onclick="errorAvailable()" onclick="errorAvailable()" class="block attended">
 					<div class="info">
 						<h4>Svenska 2<h4>
 						<h4>Sal 345<h4>
@@ -149,7 +168,7 @@
 			</div>
 			<div class="thursday hide weekdayschedule">
 				<p>Thursday</p>
-				<div class="block not_attended" style="height: 80px; margin-top: -30px;">
+				<div onclick="errorAvailable()" class="block not_attended" style="height: 80px; margin-top: -30px;">
 					<div class="info">
 						<h4>Engelska<h4>
 						<h4>Sal 123<h4>
@@ -160,7 +179,7 @@
 					</div>
 				</div>
 				<div class="margin"></div>
-				<div class="block not_attended" style="height: 125px;">
+				<div onclick="errorAvailable()" class="block not_attended" style="height: 125px;">
 					<div class="info">
 						<h4>Mattematik 4<h4>
 						<h4>Sal 345<h4>
@@ -173,7 +192,7 @@
 				<div class="margin"></div>
 				<div class="margin"></div>
 				<div class="margin"></div>
-				<div class="block not_attended" style="height: 75px;">
+				<div onclick="errorAvailable()" class="block not_attended" style="height: 75px;">
 					<div class="info">
 						<h4>Biologi 1<h4>
 						<h4>Sal 153<h4>
@@ -198,6 +217,13 @@
 			</div>
 			<div class="friday hide weekdayschedule">
 				<p>Friday</p>
+				<div class="margin"></div>
+				<div class="margin"></div>
+				<div class="margin"></div>
+				<div class="margin"></div>
+				<div class="margin"></div>
+				<div class="margin"></div>
+				<div class="margin"></div>
 				<div onclick="popup()" class="lana block attending" style="height: 400px;">
 					<div class="info">
 						<h4>LANA NAKNA<h4>
@@ -211,7 +237,7 @@
 			</div>
 			<div class="saturday hide weekdayschedule">
 				<p>Saturday</p>
-				<div class="block unavailable" style="height: 250px;">
+				<div onclick="errorUnavailable()" class="block unavailable" style="height: 250px;">
 					<div class="info">
 						<h4>Övningkörning<h4>
 					</div>
@@ -226,7 +252,7 @@
 				<div class="margin"></div>
 				<div class="margin"></div>
 				<div class="margin"></div>
-				<div class="block unavailable">
+				<div onclick="errorUnavailable()" class="block unavailable">
 					<div class="info">
 						<h4>Teori Övningkörning<h4>
 						<h4>Sal 420<h4>
@@ -251,10 +277,34 @@
 		<h1>ITG</h1>
 		<h2>11:00 - 16:00</h2>
 		<textarea placeholder="Leave a comment" class="comment" id="commentarea"></textarea>
-	<div class="inputs">
-		<h2 onclick="no()" style="color: #95989A"> Not attending</h2>
-		<h2 onclick="yes()"> Attending </h2>
+		<div class="inputs">
+			<h2 onclick="no()" style="color: #95989A"> Not attending</h2>
+			<h2 onclick="yes()"> Attending </h2>
+		</div>
 	</div>
+	<div onclick="add()" class="add">
+		<p>+</p>
+	</div>
+	<div class="addpopup hide">
+		<div class="desktop_addinputs">
+			<div class="desktop_moreaddinputs">
+			<label for="name">Name</label>	
+			<input type="name">
+			</div>
+			<div class="desktop_moreaddinputs">
+			<label for="date">Date</label>	
+			<input type="date">
+			</div>
+			<div class="desktop_moreaddinputs">
+			<label for="time">Time</label>	
+			<input type="time">
+			</div>
+		</div>
+		<textarea placeholder="Attendants" class="comment" id="commentarea"></textarea>
+		<div class="inputs">
+			<h2 onclick="cancel()" style="color: #95989A"> Cancel</h2>
+			<h2 onclick="cancel()"> Create </h2>
+		</div>
 	</div>
 	</body>
 	<script src="./js/meetings.js"></script>
