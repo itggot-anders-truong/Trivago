@@ -5,6 +5,7 @@
 
 	body {
 		margin: 0;
+		height: 300vh;
 		font-family: sans-serif;
 		text-decoration: none;
 		background-color: black;
@@ -47,9 +48,18 @@
 	}
 
 	#content {
-		height: 300vh;
+		height: 100vh;
 		z-index: -1;
 	}
+
+
+
+	.sprite { background: url('sprite.png') no-repeat top left; width: 375px; height: 250px;  } 
+	.sprite.moonmoon { background-position: 0px 0px;  } 
+	.sprite.bar { background-position: 0px -255px;  } 
+	.sprite.food { background-position: 0px -510px;  } 
+	.sprite.moon { background-position: 0px -765px;  } 
+
 
 
 
