@@ -3,43 +3,20 @@
 	<head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="UTF-8">
-		<title>Attendance™</title>
+		<title>Trivago</title>
 		<link rel="stylesheet" href="./css/index.css">
 	</head>
 	<body>
-	<div id="content" class="sidenav_sit1">
-		<div class="desktop">
-			<header>
-				<h1>Attendance™</h1>
-			</header>
-			<div class="desktop_inputs">
-				<input placeholder="Username" class="input username" type="text" style="margin-bottom: 30px;">
-				<input onclick="hide(this)" placeholder="Password" class="input password" type="password">
-				<p style="margin-left: 5px;" onclick="forgot()"> Forgot Password</p>
-				<p style="display: none;" onclick="popup()"> Sign up </p>
-				<div onclick="login()" id="login">
-					<h1> Log in</h1>
-				</div>
-			</div>
+		<header>
+			<h1>Trivago</h1>
+		</header>
+		<nav>
+			<h2 class="top">Top</h2>
+			<h2 class="flyg">Boka Flyg</h2>
+			<h2 class="hotell">Boka Hotell</h2>
+		</nav>
+		<div id="content">
 		</div>
-	</div>
-	<div class="desktop_content">
-		<div class="popup hide">
-			<h1> Register!</h1>
-			<input placeholder="Username" class="input username_register" type="text" style="margin-bottom: 30px; margin-top: 20px;">
-			<input placeholder="Password" class="input password_register" type="text">
-			<div class="inputs">
-				<h2 onclick="cancel()" style="color: #95989A; display: none;"> Cancel</h2>
-				<h2 onclick="register()"> Sign up </h2>
-			</div>
-		</div>
-		<div class="desktop_images">
-			<h1 style="margin-bottom: -50px; margin-top: 20px;"> Med hjälp av Attendance™ kan du närvara eller frånvara dig med några knapptryck!</h1>
-			<img style="width: 90%; height: 50%; margin-top: 100px; border: 1px solid black;" src="./img/overview.png">
-		</div>
-		<div onclick="cancel()" class="popupblack">
-		</div>
-	</div>
     </body>
 	<script src="./js/index.js"></script>
 </html>
