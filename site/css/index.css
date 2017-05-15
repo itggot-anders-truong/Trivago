@@ -1,7 +1,8 @@
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
 
 	body {
 		margin: 0;
@@ -11,6 +12,10 @@
 		background-color: black;
 	}
 
+	h1, h2 {
+		font-family: Comic Sans MS;
+	}
+
 	header {
 		background-color: white;
 		height: 50px;
@@ -18,12 +23,12 @@
 		display: flex;
 		flex-direction: row;
 		position: fixed;
+		z-index: 1;
 	}
 
 	header h1 {
 		text-align: center;
 		margin: auto;
-		font-family: Comic Sans MS;
 		font-size: 30px;
 	}
 
@@ -47,20 +52,93 @@
 		font-weight: normal;
 	}
 
-	#content {
-		height: 100vh;
-		z-index: -1;
+	#index {
+		height: 160vh;
+		z-index: 0;
+		overflow: hidden;
 	}
 
 
+	.sprite { 
+		background: url('../img/spritesheet.png') no-repeat top left; 
+		width: 790px; 
+		height: 526px; 
+		background-size: 50%;
+		overflow: hidden; 
+	} 
 
-	.sprite { background: url('sprite.png') no-repeat top left; width: 375px; height: 250px;  } 
-	.sprite.moonmoon { background-position: 0px 0px;  } 
-	.sprite.bar { background-position: 0px -255px;  } 
-	.sprite.food { background-position: 0px -510px;  } 
-	.sprite.moon { background-position: 0px -765px;  } 
+	.sprite.bar, .sprite.food, .sprite.moon, sprite.moonmoon {
+		overflow: hidden;
+	}
+
+	.sprite.bar { 
+		background-position: 0 0; 
+	}
+
+
+	.sprite.food { 
+		background-position: 0 -527px; 
+	}
+
+
+	.sprite.moon { 
+		background-position: 0 -1054px; 
+	}
+
+
+	.sprite.moonmoon { 
+		background-position: 0 -1581px; 
+	} 
 
 
 
+	.boka {
+		width: 100vw;
+		height: 80vh;
+		overflow: hidden;
+	}
 
-}
+	.boka h1, .boka h2 {
+		color: white;
+		margin-left: 20px;
+	}
+
+	.boka h2 {
+		font-size: 20px;
+		font-weight: normal;
+	}
+
+	input, select {
+		height: 20px;
+		width: 200px;
+		margin-left: 20px;
+	}
+
+	select {
+		border: none;
+		height: 25px;
+		width: 204px;
+	}
+
+	.rowinputs {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.rowinputs input {
+		width: 88px;
+	}
+
+	button {
+		background-color: white;
+		height: 40px;
+		width: 120px;
+		margin-top: 30px;
+		margin-left: 20px;
+		font-size: 20px;
+		font-weight: bold;
+		border-radius: 20%;
+	}
+
+  }
+
