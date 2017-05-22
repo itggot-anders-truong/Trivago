@@ -11,50 +11,56 @@
 		<header>
 			<h1>Trivago</h1>
 		</header>
-		<nav>
+		<nav class="mobile">
 			<h2 class="navindex">Index</h2>
 			<h2 class="navflyg">Boka Flyg</h2>
 			<h2 class="navhotell">Boka Hotell</h2>
 		</nav>
+		<nav class="desktop">
+			<h2 class="navindex">Index</h2>
+			<h2 class="navflyg">Boka</h2>
+		</nav>
 		<div id="index">
-			<div style="margin-top: 125px;" class='sprite bar'></div>
-			<div class='sprite food'></div>
-			<div class='sprite moon'></div>
-			<div class='sprite moonmoon'></div>
+			<div class='hide sprite bar'></div>
+			<div class='hide sprite food'></div>
+			<div class='hide sprite moon'></div>
+			<div class='hide sprite moonmoon'></div>
 		</div>
-		<div class="boka" id="flyg">
-			<h1>Boka flyg</h1>
-			<h2>Utresedatum</h2>
-			<input type="date"></input>
-			<h2>Hemresedatum</h2>
-			<input type="date"></input>
-			<h2>Resenärer</h2>
-			<div class="rowinputs">
-				<input placeholder="Vuxna" type="number"></input>
-				<input placeholder="Barn" type="number"></input>
+		<div class="desktop_boka">
+			<div class="boka" id="flyg">
+				<h1>Boka flyg</h1>
+				<h2>Utresedatum</h2>
+				<input type="date"></input>
+				<h2>Hemresedatum</h2>
+				<input type="date"></input>
+				<h2>Resenärer</h2>
+				<div class="rowinputs">
+					<input placeholder="Vuxna" type="number"></input>
+					<input placeholder="Barn" type="number"></input>
+				</div>
+				<h2>Biljetttyp</h2>
+				<select>
+					<option value="Ekonomi">Ekonomi</option>
+					<option value="Business">Business</option>
+				</select>
+				</br>
+				<button> Sök resa</button>
 			</div>
-			<h2>Biljetttyp</h2>
-			<select>
-				<option value="Ekonomi">Ekonomi</option>
-				<option value="Business">Business</option>
-			</select>
-			</br>
-			<button> Sök resa</button>
-		</div>
-		<div class="boka" id="hotell">
-			<h1>Boka hotell</h1>
-			<h2>Check-in datum</h2>
-			<input type="date"></input>
-			<h2>Check-out datum</h2>
-			<input type="date"></input>
-			<h2>Antal rum</h2>
-				<input placeholder="1" type="number"></input>
-			<select style="margin-top: 10px;">
-				<option value="Enkelsäng">Enkelsäng</option>
-				<option value="Dubbelsäng">Dubbelsäng</option>
-			</select>
-			</br>
-			<button> Sök resa</button>
+			<div class="boka" id="hotell">
+				<h1>Boka hotell</h1>
+				<h2>Check-in datum</h2>
+				<input type="date"></input>
+				<h2>Check-out datum</h2>
+				<input type="date"></input>
+				<h2>Antal rum</h2>
+					<input placeholder="1" type="number"></input>
+				<select style="margin-top: 10px;">
+					<option value="Enkelsäng">Enkelsäng</option>
+					<option value="Dubbelsäng">Dubbelsäng</option>
+				</select>
+				</br>
+				<button> Sök resa</button>
+			</div>
 		</div>
     </body>
 	<script src="./js/index.js"></script>

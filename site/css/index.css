@@ -53,7 +53,7 @@
 	}
 
 	#index {
-		height: 160vh;
+		height: 60vh;
 		z-index: 0;
 		overflow: hidden;
 	}
@@ -61,14 +61,15 @@
 
 	.sprite { 
 		background: url('../img/spritesheet.png') no-repeat top left; 
-		width: 790px; 
-		height: 526px; 
-		background-size: 50%;
+		width: 375px; 
+		height: 249px; 
+		background-size: 100%;
 		overflow: hidden; 
 	} 
 
-	.sprite.bar, .sprite.food, .sprite.moon, sprite.moonmoon {
+	.sprite.bar, .sprite.food, .sprite.moon, .sprite .moonmoon {
 		overflow: hidden;
+		margin-top: 125px;
 	}
 
 	.sprite.bar { 
@@ -77,17 +78,17 @@
 
 
 	.sprite.food { 
-		background-position: 0 -527px; 
+		background-position: 0 -249px; 
 	}
 
 
 	.sprite.moon { 
-		background-position: 0 -1054px; 
+		background-position: 0 -498px; 
 	}
 
 
 	.sprite.moonmoon { 
-		background-position: 0 -1581px; 
+		background-position: 0 -747px; 
 	} 
 
 
@@ -140,5 +141,159 @@
 		border-radius: 20%;
 	}
 
+	.desktop {
+		display: none;
+	}
+
   }
+
+  @media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+	  html, body {
+		  overflow-x: hidden;
+		   	  }
+
+	body {
+		background-color: black;
+	  	margin: 0;
+  	}
+
+	h1, h2 {
+		color: white;
+		font-family: Comic Sans MS;
+	}
+
+	header {
+		width: 100vw;
+		height: 10vh;
+		background-color: white;
+		position: fixed;
+	}
+
+	header h1, nav h2 {
+		color: black;
+		margin-left: 20px;
+	}
+		
+	nav {
+		z-index: 1;
+		position: fixed;
+		display: flex;
+		flex-direction: row;
+		height: 10vh;
+		width: 30vw;
+		margin-left: 80vw;
+	}
+
+	nav h2 {
+		margin-top: auto;
+		margin-bottom: auto;
+		margin-left: 30px;
+		cursor: pointer;
+	}
+
+	nav h2:active, nav h2:hover{
+		font-size: 30px;
+		transition: 0.2s;
+		}
+		
+
+	.sprite { 
+		background: url('../img/spritesheet.png') no-repeat top left; 
+		width: 1051px; 
+		height: 700px; 
+		overflow: hidden;
+		background-size: 100%; 
+
+	} 
+
+	.sprite.bar, .sprite.food, .sprite.moon, .sprite.moonmoon {
+		overflow: hidden;
+		margin-top: 125px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.sprite.bar { 
+		background-position: 0 0; 
+	}
+
+
+	.sprite.food { 
+		background-position: 0 -701px; 
+	}
+
+
+	.sprite.moon { 
+		background-position: 0 -1402px; 
+	}
+
+
+	.sprite.moonmoon { 
+		background-position: 0 -2103px; 
+	} 
+
+	#index {
+		flex-wrap: wrap;
+		width: 100vw;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.boka {
+		display: flex;
+		flex-direction: column;
+	}
+
+	input, select {
+		height: 20px;
+		width: 200px;
+		margin-left: 0px;
+	}
+
+	select {
+		border: none;
+		height: 25px;
+		width: 204px;
+	}
+
+	.rowinputs {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.rowinputs input {
+		width: 88px;
+	}
+
+	.desktop_boka {
+		display: flex;
+		flex-direction: row;
+		width: 100vw;
+		justify-content: space-around;
+		height: 80vh;
+	}
+
+	.mobile {
+		display: none;
+	}
+
+	.hide {
+		display: none;
+	}
+
+	button {
+		background-color: white;
+		height: 40px;
+		width: 120px;
+		margin-top: 30px;
+		margin-left: 20px;
+		font-size: 20px;
+		font-weight: bold;
+		border-radius: 20%;
+	}
+}
 
