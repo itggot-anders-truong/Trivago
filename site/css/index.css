@@ -6,7 +6,6 @@
 
 	body {
 		margin: 0;
-		height: 300vh;
 		font-family: sans-serif;
 		text-decoration: none;
 		background-color: black;
@@ -60,7 +59,7 @@
 
 
 	.sprite { 
-		background: url('../img/spritesheet.png') no-repeat top left; 
+		background: url('../img/spritesheet.jpg') no-repeat top left; 
 		width: 375px; 
 		height: 249px; 
 		background-size: 100%;
@@ -73,22 +72,22 @@
 	}
 
 	.sprite.bar { 
-		background-position: 0 0; 
+		background-position: 2px 0; 
 	}
 
 
 	.sprite.food { 
-		background-position: 0 -249px; 
+		background-position: 2px -249px; 
 	}
 
 
 	.sprite.moon { 
-		background-position: 0 -498px; 
+		background-position: 2px -498px; 
 	}
 
 
 	.sprite.moonmoon { 
-		background-position: 0 -747px; 
+		background-position: 2px -747px; 
 	} 
 
 
@@ -143,6 +142,18 @@
 
 	.desktop {
 		display: none;
+	}
+
+	footer {
+		width: 100vw;
+		height: 5vh;
+	}
+
+	footer h1 {
+		font-weight: normal;
+		font-size: 10px;
+		margin-left: 20px;
+		color: white;
 	}
 
   }
@@ -202,7 +213,7 @@
 		
 
 	.sprite { 
-		background: url('../img/spritesheet.png') no-repeat top left; 
+		background: url('../img/spritesheet.jpg') no-repeat top left; 
 		width: 1051px; 
 		height: 700px; 
 		overflow: hidden;
@@ -218,22 +229,22 @@
 	}
 
 	.sprite.bar { 
-		background-position: 0 0; 
+		background-position: 2px 0; 
 	}
 
 
 	.sprite.food { 
-		background-position: 0 -701px; 
+		background-position: 2px -701px; 
 	}
 
 
 	.sprite.moon { 
-		background-position: 0 -1402px; 
+		background-position: 2px -1402px; 
 	}
 
 
 	.sprite.moonmoon { 
-		background-position: 0 -2103px; 
+		background-position: 2px -2103px; 
 	} 
 
 	#index {
@@ -267,6 +278,7 @@
 
 	.rowinputs input {
 		width: 88px;
+		margin-right: 20px;
 	}
 
 	.desktop_boka {
@@ -275,6 +287,7 @@
 		width: 100vw;
 		justify-content: space-around;
 		height: 80vh;
+		margin-top: 20vh;
 	}
 
 	.mobile {
@@ -294,6 +307,18 @@
 		font-size: 20px;
 		font-weight: bold;
 		border-radius: 20%;
+	}
+
+	footer {
+		width: 100vw;
+		height: 5vh;
+	}
+
+	footer h1 {
+		font-weight: normal;
+		font-size: 10px;
+		margin-left: 10px;
+		opacity: 0.5;
 	}
 }
 
