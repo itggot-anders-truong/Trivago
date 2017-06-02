@@ -322,3 +322,168 @@
 	}
 }
 
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+	  html, body {
+		  overflow-x: hidden;
+		   	  }
+
+	body {
+		background-color: black;
+	  	margin: 0;
+  	}
+
+	h1, h2 {
+		color: white;
+		font-family: Comic Sans MS;
+	}
+
+	header {
+		width: 100vw;
+		height: 10vh;
+		background-color: white;
+		position: fixed;
+	}
+
+	header h1, nav h2 {
+		color: black;
+		margin-left: 20px;
+	}
+		
+	nav {
+		z-index: 1;
+		position: fixed;
+		display: flex;
+		flex-direction: row;
+		height: 10vh;
+		width: 30vw;
+		margin-left: 60vw;
+	}
+
+	nav h2 {
+		margin-top: auto;
+		margin-bottom: auto;
+		margin-left: 30px;
+		cursor: pointer;
+	}
+
+	nav h2:active, nav h2:hover{
+		font-size: 30px;
+		transition: 0.2s;
+		}
+		
+
+	.sprite { 
+		background: url('../img/spritesheet.jpg') no-repeat top left; 
+		width: 768px; 
+		height: 511px; 
+		overflow: hidden;
+		background-size: 100%; 
+
+	} 
+
+	.sprite.bar, .sprite.food, .sprite.moon, .sprite.moonmoon {
+		overflow: hidden;
+		margin-top: 80px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.sprite.bar { 
+		background-position: 2px 0; 
+	}
+
+
+	.sprite.food { 
+		background-position: 2px -512px; 
+	}
+
+
+	.sprite.moon { 
+		background-position: 2px -1023px; 
+	}
+
+
+	.sprite.moonmoon { 
+		background-position: 2px -1535px; 
+	} 
+
+	#index {
+		flex-wrap: wrap;
+		width: 100vw;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.boka {
+		display: flex;
+		flex-direction: column;
+	}
+
+	input, select {
+		height: 20px;
+		width: 200px;
+		margin-left: 0px;
+	}
+
+	select {
+		border: none;
+		height: 25px;
+		width: 204px;
+	}
+
+	.rowinputs {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.rowinputs input {
+		width: 88px;
+		margin-right: 20px;
+	}
+
+	.desktop_boka {
+		display: flex;
+		flex-direction: row;
+		width: 100vw;
+		justify-content: space-around;
+		height: 60vh;
+		margin-top: 40vh;
+	}
+
+	.mobile {
+		display: none;
+	}
+
+	.hide {
+		display: none;
+	}
+
+	button {
+		background-color: white;
+		height: 40px;
+		width: 120px;
+		margin-top: 30px;
+		margin-left: 20px;
+		font-size: 20px;
+		font-weight: bold;
+		border-radius: 20%;
+	}
+
+	footer {
+		width: 100vw;
+		height: 5vh;
+	}
+
+	footer h1 {
+		font-weight: normal;
+		font-size: 10px;
+		margin-left: 10px;
+		opacity: 0.5;
+	}
+}
+
